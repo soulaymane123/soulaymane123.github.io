@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clubs Parascolaires - ESI</title>
+    <style>
+        :root {
+            --primary-color:#36c;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --light-color: #ecf0f1;
+            --dark-color: #36c;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        
+        .subtitle {
+            font-style: italic;
+            margin-top: 0.5rem;
+        }
+        
+        .clubs-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+            padding: 2rem 0;
+        }
+        
+        .club-card {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .club-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .club-logo {
+            width: 100%;
+            height: 250px;
+            object-fit: contain;
+            background-color: var(--light-color);
+            padding: 1rem;
+        }
+        
+        .club-content {
+            padding: 1.5rem;
+        }
+        
+        .club-title {
+            color: var(--primary-color);
+            margin-top: 0;
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 0.5rem;
+        }
+        
+        .club-description {
+            margin-bottom: 1.5rem;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 1rem;
+        }
+        
+        .social-link {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background-color: var(--secondary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        
+        .social-link:hover {
+            background-color: var(--primary-color);
+        }
+        
+        .youtube { background-color: #ff0000; }
+        .linkedin { background-color: #0077b5; }
+        .instagram { background-color: #e4405f; }
+        
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+            margin-top: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            .clubs-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Clubs Parascolaires de l'ESI</h1>
+            <p class="subtitle">Découvrez la vie étudiante dynamique de l'École des Sciences de l'Information</p>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="clubs-container">
+            <!-- Club JLM ESI -->
+            <div class="club-card">
+                <img src="Capture d’écran 2025-04-10 144948.png" alt="Logo JLM ESI" class="club-logo">
+                <div class="club-content">
+                    <h2 class="club-title">Club JLM-ESI</h2>
+                    <p class="club-description">
+                        Jeunes Leaders Marocains est une initiative 100% marocaine destinée aux étudiants de l'enseignement supérieur pour le développement de projets socioéconomiques et de développement durable avec et au profit de populations dans le besoin ou en situation précaire.
+                        <br><br>
+                        JLM a pour mission de développer l'esprit entrepreneurial et de solidarité chez les jeunes marocains tout en participant au développement de leurs communautés et de leur pays.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/jlm-esi-bb6500339?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" class="social-link linkedin">LinkedIn</a>
+                        <a href="https://www.instagram.com/jlm_esi?igsh=Y21uNjJkNDZheWV1" class="social-link instagram">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Club CODE ESI -->
+            <div class="club-card">
+                <img src="Capture d’écran 2025-04-10 145016.png" alt="Logo CODE ESI" class="club-logo">
+                <div class="club-content">
+                    <h2 class="club-title">Club CODE-ESI</h2>
+                    <p class="club-description">
+                        Club Of Data Engineers ou CODE est le club IT de l'Ecole des Sciences de l'Information.
+                        <br><br>
+                        La mission principale du club CODE est de créer une meilleure atmosphère à l'école et permettre aux étudiants d'échanger leurs idées, créer des contacts dans le monde professionnel et aussi organiser des événements et des formations pour partager leur savoir faire.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/company/codesi18/" class="social-link linkedin">LinkedIn</a>
+                        <a href="https://youtube.com/@code_esi?si=Gdq4pLQlDhVTwL8a" class="social-link youtube">YouTube</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Club JCMP ESI -->
+            <div class="club-card">
+                <img src="Capture d’écran 2025-04-10 145231.png" alt="Logo JCMP ESI" class="club-logo">
+                <div class="club-content">
+                    <h2 class="club-title">Club JCMP-ESI</h2>
+                    <p class="club-description">
+                        La JCMP ESI a pour mission le développement personnel et l'épanouissement de la vie parascolaire.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/company/jcmpesi/" class="social-link linkedin">LinkedIn</a>
+                        <a href="https://youtube.com/@jcmpesi8880?si=YojxPuk5nzELhKg9" class="social-link youtube">YouTube</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Club ESI TV -->
+            <div class="club-card">
+                <img src="Capture d’écran 2025-04-10 145250.png" alt="Logo ESI TV" class="club-logo">
+                <div class="club-content">
+                    <h2 class="club-title">Club ESI TV</h2>
+                    <p class="club-description">
+                        ESI TV met en lumière les événements, les projets et les réussites qui font la fierté de la communauté étudiante. Son objectif principal est de capturer, de produire et de partager les moments les plus passionnants et significatifs de la vie étudiante au sein de l'école des sciences de l'information, que ce soit à travers des podcasts captivants, des interviews percutantes, ou des reportages détaillés.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/company/esitv/" class="social-link linkedin">LinkedIn</a>
+                        <a href="https://youtube.com/@esi_tv?feature=shared" class="social-link youtube">YouTube</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Club Chess -->
+            <div class="club-card">
+                <img src="Capture d’écran 2025-04-10 145312.png" alt="Logo Club Chess" class="club-logo">
+                <div class="club-content">
+                    <h2 class="club-title">Club Chess</h2>
+                    <p class="club-description">
+                        Club des jeux d'échecs de l'ESI.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/chess.esi?igsh=MWtqc3phMjVkbnZ4aw" class="social-link instagram">Instagram</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Clubs Parascolaires de l'ESI - Tous droits réservés</p>
+        </div>
+    </footer>
+</body>
+</html>
